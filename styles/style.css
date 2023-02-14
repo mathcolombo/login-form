@@ -1,0 +1,92 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: var(--background);
+}
+
+main {
+    display: flex;
+    flex: 50%;
+    background-color: var(--background);
+    padding: 15px;
+    flex-flow: column;
+    gap: 2.5rem;
+}
+
+main h1 {
+    color: var(--text-title);
+}
+
+main p {
+    color: var(--text-base);
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    color: var(--text-base);
+    gap: 1rem ;
+}
+
+#inpmail, #inppass{
+    background-color: var(--background);
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+    width: 100%;
+    height: 7vh;
+    color: var(--text-base);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#inpmail:focus, #inppass:focus {
+    border: 2px solid var(--primary-color);
+} 
+
+#adicionais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 7vh;
+    color: var(--form-background);
+    cursor: pointer;
+}
+
+#register {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#imageSide {
+    display: none;
+}
